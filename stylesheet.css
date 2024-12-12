@@ -135,7 +135,7 @@ img {
 /* BACKGROUNDS */
 
 .home-background {
-    background-image: url('images\ccar_background_1.png');
+    background-image: url('images/ccar_background_1.png');
     background-repeat: no-repeat;
     background-size: cover;
 }
