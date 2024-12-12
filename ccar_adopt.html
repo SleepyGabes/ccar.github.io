@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <meta charset="utf-8" />
+        <meta name='viewport' content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Compassionate Critters Animal Rescue (CCAR) is a non-profit organisation that helps rescue animals such as dogs, cats, rabbits and more!" />
+        <meta name="keywords" content="charity, donation, shelter, dog shelter, cat shelter, animal shelter, adoption, animal adoption, dog adoption, cat adoption, stray animal, stray adoption" />
+
+        <title>CCAR</title>
+
+        <script src="js/dropdown_category_script.js"></script>
+        
+        <link rel="stylesheet" href="css/stylesheet.css">
+        <link rel="icon" type="image" href="images/ccar_favi.png">
+
+    </head>
+
+    <div class="adopt-background">
+        <body>
+
+            <ul>
+                <li><img src="images/ccar_favi.png" alt="Logo for Compassionate Critters Animal Rescue (CCAR) representing a dog paw"></li>
+                <li><a href="ccar_index.html"><u>Home</u></a></li>
+                <li><a href="ccar_about.html"><u>About</u></a></li>
+                <li><a href="ccar_news.html"><u>News</u></a></li>
+                <li><a href="ccar_adopt.html"><u>Adoption</u></a></li>
+                <li><a href="ccar_contact.html"><u>Contact</u></a></li>
+            </ul>
+
+            <div class="container_adopt">
+                <div class="centre">
+                    <h1>Ready to 'paws' and adopt a new furry friend?</h1>
+                    <p>Take a look at the current shelter animals we have and give them a forever home!</p>
+                </div>
+                <div class="row_page" style="height: 470px;"></div>
+                <!-- Control buttons -->
+                    <div id="myBtnContainer">
+                        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                        <button class="btn" onclick="filterSelection('dogs')">Dogs</button>
+                        <button class="btn" onclick="filterSelection('cats')">Cats</button>
+                        <button class="btn" onclick="filterSelection('birds')">Birds</button>
+                        <button class="btn" onclick="filterSelection('bunnys')">Bunnies</button>
+                    </div>
+                    
+                    <!-- The filterable elements. Note that some have multiple class names (this can be used if they belong to multiple categories) -->
+                    <div class="container" style="background-color: white;">
+                        <div class="filterDiv dogs" style="list-style-position: outside;">
+                            <div class="card">
+                                <img src="images/ccar_image_5.png" alt="">
+                                <div class="card_container" style="color: black;">
+                                    <h4>Max</h4>
+                                    <p><li>Age: 3</li></p>
+                                    <p><li>Gender: Male</li></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv dogs">
+                            <div class="card">
+                                <img src="images/ccar_image_6.png" alt="">
+                                <div class="card_container" style="color: black;">
+                                    <h4>Duke</h4>
+                                    <p>
+                                        <li>Age: 5</li>
+                                        <li>Gender: Female</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv cats">
+                            <div class="card">
+                                <img src="images/ccar_image_10.png" alt="">
+                                <div class="card_container" style="color: black;">
+                                    <h4>Whiskers</h4>
+                                    <p>
+                                        <li>Age: 2</li>
+                                        <li>Gender: Male</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv dogs">
+                            <div class="card">
+                                <img src="images/ccar_image_7.png" alt="">
+                                <div class="card_container" style="color: black;">
+                                    <h4>Lola</h4>
+                                    <p>
+                                        <li>Age: 2</li>
+                                        <li>Gender: Female</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv cats">
+                            <div class="card">
+                                <img src="images/ccar_image_11.png" alt="">
+                                <div class="card_container" style="color: black;">
+                                    <h4>Ginger</h4>
+                                    <p>
+                                        <li>Age: 1</li>
+                                        <li>Gender: Male</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv birds">
+                            <div class="card">
+                                <img src="images/ccar_image_14.png" alt="">
+                                <div class="card_container" style="color: black;">
+                                    <h4>Tweety</h4>
+                                    <p>
+                                        <li>Age: 2</li>
+                                        <li>Gender: Female</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv cats">
+                            <div class="card">
+                                <img src="images/ccar_image_12.png" alt="">
+                                <div class="card_container" style="color: black;">
+                                    <h4>Mittens</h4>
+                                    <p>
+                                        <li>Age: 4</li>
+                                        <li>Gender: Female</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv cats">
+                            <div class="card">
+                                <img src="images/ccar_image_13.png" alt="">
+                                <div class="card_container" style="color: black;">
+                                    <h4>Jasper</h4>
+                                    <p>
+                                        <li>Age: 1</li>
+                                        <li>Gender: Male</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv bunnys">
+                            <div class="card">
+                                <img src="images/ccar_image_15.png" alt="">
+                                <div class="card_container" style="color: black;">
+                                    <h4>Peanut</h4>
+                                    <p>
+                                        <li>Age: 2</li>
+                                        <li>Gender: Female</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv bunnys">
+                            <div class="card">
+                                <img src="images/ccar_image_16.png" alt="">
+                                <div class="card_container" style="color: black;">
+                                    <h4>Kiwi</h4>
+                                    <p>
+                                        <li>Age: 1</li>
+                                        <li>Gender: Male</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv dogs">
+                            <div class="card">
+                                <img src="images/ccar_image_8.png" alt="">
+                                <div class="card_container" style="color: black;">
+                                    <h4>Rocky</h4>
+                                    <p>
+                                        <li>Age: 3</li>
+                                        <li>Gender: Male</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv bunnys">
+                            <div class="card">
+                                <img src="images/ccar_image_17.png" alt="">
+                                <div class="card_container" style="color: black;">
+                                    <h4>Acorn</h4>
+                                    <p>
+                                        <li>Age: 2</li>
+                                        <li>Gender: Female</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="filterDiv dogs">
+                            <div class="card">
+                                <img src="images/ccar_image_9.png" alt="">
+                                <div class="card_container" style="color: black;">
+                                    <h4>Cooper</h4>
+                                    <p>
+                                        <li>Age: 5</li>
+                                        <li>Gender: Male</li>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="row_page" style="height: 100px;"></div>
+            </div>
+
+
+            <footer>&copy; 2024 Compassionate Critters Animal Rescue (CCAR)</footer>
+
+        </body>
+    </div>
+
+</html>

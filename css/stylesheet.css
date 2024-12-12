@@ -1,0 +1,520 @@
+/* GLOBAL STYLES */
+
+* {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* NAVIGATION BAR */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6f899a;
+}
+
+li {
+    padding: 10px 36px;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    font-size: 25px;
+    text-align: center;
+    padding: 14px 0px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #5c7281;
+}
+
+u {
+    color: white;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+footer {
+    padding: 30px;
+    background-color: #6f899a;
+    text-align: center;
+    color: white;
+    position:fixed;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* CONTAINERS */
+
+.container_home {
+    margin-left: 25%;
+    padding: 10px 16px;
+    width: 900px;
+    height: 1000px;
+    max-width: 100%;
+    max-height: 100%;
+    right: 0;
+    left: 0;
+}
+
+.container_about {
+    margin-left: 25%;
+    padding: 10px 16px;
+    width: 900px;
+    height: 1500px;
+    max-width: 100%;
+    max-height: 100%;
+    right: 0;
+    left: 0;
+}
+
+.container_news {
+    display: grid;
+    grid-template-columns: 3fr 1fr; /* Main content (3 parts), sidebar (1 part) */
+    gap: 20px; /* Space between columns */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container_adopt {
+    margin-left: 25%;
+    padding: 10px 16px;
+    width: 900px;
+    height: 2800px;
+    max-width: 100%;
+    max-height: 100%;
+    right: 0;
+    left: 0;
+}
+
+.container_contact {
+    margin-left: 25%;
+    padding: 10px 16px;
+    width: 900px;
+    height: 1000px;
+    max-width: 100%;
+    max-height: 100%;
+    right: 0;
+    left: 0;
+}
+
+.container_form{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+/* CENTRING */
+
+.centre {
+    text-align: center;
+    font-size: 36px;
+    color: white;
+    padding-top: 50px;
+    margin: 5%;
+}
+
+/* IMAGES */
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+/* BACKGROUNDS */
+
+.home-background {
+    background-image: url('/Assignments/Assignment 2/compassionate_critters_animal_rescue/images/ccar_background_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.news-background {
+    background-image: url('/Assignments/Assignment 2/compassionate_critters_animal_rescue/images/ccar_background_2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.adopt-background {
+    background-image: url('/Assignments/Assignment 2/compassionate_critters_animal_rescue/images/ccar_background_3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.contact-background {
+    background-image: url('/Assignments/Assignment 2/compassionate_critters_animal_rescue/images/ccar_background_1.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* BUTTONS */
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    color: black;
+    background-color: white;
+    text-decoration: none;
+    text-align: center;
+    font-size: 50px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+button a:link, a:visited {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* CARDS */
+
+.card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #fff;
+    overflow: hidden;
+    margin: 5px auto; /* Center card and provide margin */
+    max-width: 100%; /* Allow cards to be responsive */
+    width: 100%; /* Default width for desktop and larger screens */
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.card_container {
+    padding: 16px;
+}
+
+.column {
+    float: left;
+    width: 30%;
+    padding: 0 10px;
+}
+
+/* PAGE SEPARATORS */
+
+.row_page {
+    grid-column: span 2;
+    height: 100px;
+}
+
+/* NEWS SECTION */
+
+.main-headline {
+    margin: 0 auto;
+    grid-column: span 2; /* Span across both columns */
+    background-color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.content {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.sidebar {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* CATEGORY DROPDOWN */
+
+.filterDiv {
+    float: left;
+    border-radius: 8px;
+    color: #ffffff;
+    width: 200px;
+    text-align: center;
+    margin: 2px;
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.container {
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+/* BUTTONS */
+
+.btn {
+    border: none;
+    outline: none;
+    padding: 6px 8px;
+    background-color: #f1f1f1;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #ddd;
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+/* FORMS */
+
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label{
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+input[type=submit]{
+    background-color: #04aa6d;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+}
+
+input[type="submit"]:hover{
+    background-color: #45a049;
+}
+
+.container{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 25px;
+}
+
+.col-25{
+    float: left;
+    width: 20%;
+    margin-top: 0px;
+}
+
+.col-75{
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.row_form{
+    height: 20px;
+}
+
+/* Clears floats after columns */
+.row:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Settings for mobile users. */
+@media (max-width: 800px) {
+
+    /* GLOBAL STYLES */
+
+    body {
+        zoom: 90%;
+        width: auto;
+    }
+
+    /* BACKGROUNDS */
+
+    .home-background {
+        background-image: url('/Assignments/Assignment 2/compassionate_critters_animal_rescue/images/ccar_background_12.png');
+        background-position: center;
+        background-size: 120%;
+        background-position: -50px 90px;
+    }
+
+    .news-background {
+        background-image: url('/Assignments/Assignment 2/compassionate_critters_animal_rescue/images/ccar_background_2.png');
+        background-position: center;
+        background-size: 200%;
+        background-position: -250px 60px;
+    }
+
+    .adopt-background {
+        background-image: url('/Assignments/Assignment 2/compassionate_critters_animal_rescue/images/ccar_background_3.png');
+        background-position: center;
+        background-size: 200%;
+        background-position: -250px 60px;
+    }
+
+    .contact-background {
+        background-image: url('/Assignments/Assignment 2/compassionate_critters_animal_rescue/images/ccar_background_1.png');
+        background-position: center;
+        background-size: 300%;
+        background-position: -300px 90px;
+    }
+
+    /* CENTRING */
+
+    .centre {
+        font-size: 16px;
+        padding-top: 20px;
+    }
+
+    /* BUTTONS */
+
+    button {
+        font-size: 30px;
+    }
+
+    /* NAVIGATION BAR */
+
+    li {
+        padding: 5px 18px;
+        float: left;
+    }
+
+    li a {
+        display: block;
+        color: white;
+        font-size: 18px;
+        text-align: center;
+        padding: 7px 0px;
+        text-decoration: none;
+    }
+
+    ul img {
+        padding: 5px 0px;
+        width: 50px;
+    }
+
+    /* CONTAINERS */
+
+    .container_home {
+        width: auto;
+        height: 900px;
+        margin-left: 0%;
+    }
+
+    .container_about {
+        width: auto;
+        height: 2000px;
+        margin-left: 0%;
+    }
+
+    .container_news {
+        display: grid;
+        grid-template-columns: 3fr 1fr; /* Main content (3 parts), sidebar (1 part) */
+        gap: 20px; /* Space between columns */
+        margin: 0 auto;
+        padding: 20px;
+        max-width: 1200px;
+    }
+
+    .container_adopt {
+        width: auto;
+        height: 2400px;
+        margin-left: 0%;
+    }
+
+    .container_contact {
+        width: auto;
+        height: 900px;
+        margin-left: 0%;
+    }
+
+
+    /* PAGE SEPARATORS */
+
+    .row {
+        height: 200px;
+        grid-column: span 2;
+    }
+
+    /* CARDS */
+
+    .card {
+        /* Add shadows to create the "card" effect */
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        border-radius: 5px;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+
+    .card_container {
+        padding: 2px 16px;
+    }
+
+    .column {
+        float: left;
+        width: 90%;
+        padding: 0 10px;
+    }
+
+    /* NEWS SECTION */
+
+    .sidebar {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .main-headline {
+        grid-column: span 2; /* Span across both columns */
+        background-color: #fff;
+        padding: 10px;
+        text-align: center;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    .main-headline h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .content {
+        background-color: #fff;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+
+    /* FORMS */
+
+    .row_form{
+        height: 1px;
+    }
+
+    .col-25, .col-75, input[type="submit"]{
+        width: 95%;
+        margin-top: 0;
+    }
+}
